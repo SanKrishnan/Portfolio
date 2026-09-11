@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #F4F0E6; /* Almond Oil primary background */
+    --bg-secondary: #FAF7F0; /* Almond Oil light surface */
+    --text-primary: #4A1E2D; /* Cabernet primary text/headings */
+    --text-secondary: #381421; /* Cabernet secondary text */
+    --text-muted: #5D2739; /* Muted Cabernet */
+    --border-color: #C8BCAC; /* Warm Almond borders with clear contrast */
+  }
+
+  .dark {
+    --bg-primary: #111111;
+    --text-primary: #F5EFE1;
+    --text-secondary: #E5DEC9;
+    --border-color: rgba(245, 239, 225, 0.25);
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Cabin Sketch', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin Sketch', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(74, 30, 45, 0.3);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(245, 239, 225, 0.3);
+}
+
+/* Selection highlight in Flame Orange */
+::-selection {
+  background-color: #E25822;
+  color: #FAF7F0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
