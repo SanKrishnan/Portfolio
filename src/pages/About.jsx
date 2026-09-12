@@ -34,7 +34,7 @@ export const About = () => {
 
         {/* Detailed Narrative */}
         <div className="md:col-span-7 space-y-8">
-          <div className="space-y-5 text-base sm:text-lg font-pixel-line font-normal leading-relaxed text-cabernet dark:text-cream-100">
+          <div className="space-y-5 text-base sm:text-lg font-pixel-line font-semibold dark:font-normal leading-relaxed text-cabernet dark:text-cream-100">
             {personalInfo.aboutDetailed.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}

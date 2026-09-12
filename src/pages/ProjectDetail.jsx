@@ -50,7 +50,7 @@ export const ProjectDetail = () => {
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tight leading-none">
           {project.name}
         </h1>
-        <p className="text-lg sm:text-2xl font-pixel-line font-normal text-flame">
+        <p className="text-lg sm:text-2xl font-pixel-line font-semibold dark:font-normal text-flame">
           {project.tagline}
         </p>
       </header>
@@ -126,7 +126,7 @@ export const ProjectDetail = () => {
           <h2 className="text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             What this project was designed to solve
           </h2>
-          <p className="text-base font-pixel-line font-normal leading-relaxed text-cabernet/90 dark:text-cream-100">
+          <p className="text-base font-pixel-line font-semibold dark:font-normal leading-relaxed text-cabernet/90 dark:text-cream-100">
             {project.problem}
           </p>
         </div>

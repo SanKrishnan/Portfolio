@@ -16,7 +16,34 @@ import { Experience } from './pages/Experience';
 import { Certifications } from './pages/Certifications';
 import { Contact } from './pages/Contact';
 
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 export const App = () => {
+  const navigate = useNavigate();
+  useEffect(() => {
+    // Detect hard refresh using Navigation Timing API (Level 2 or legacy)
+    let navType;
+    if (performance && typeof performance.getEntriesByType === 'function') {
+      const entries = performance.getEntriesByType('navigation');
+      if (entries && entries.length > 0) {
+        navType = entries[0].type; // 'navigate', 'reload', etc.
+      }
+    }
+    if (!navType && performance && performance.navigation) {
+      // Legacy Navigation Timing API
+      const type = performance.navigation.type;
+      if (type === performance.navigation.TYPE_RELOAD) {
+        navType = 'reload';
+      }
+    }
+    const isReload = navType === 'reload';
+    if (isReload && window.location.pathname !== '/') {
+      // Replace current entry so back button stays on home after redirect
+      navigate('/', { replace: true });
+    }
+  }, [navigate]);
+
   return (
     <ThemeProvider>
       <Router>
@@ -47,3 +74,4 @@ export const App = () => {
 };
 
 export default App;
+

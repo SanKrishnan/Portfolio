@@ -13,7 +13,7 @@ export const Certifications = () => {
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tight">
           CERTIFICATIONS
         </h1>
-        <p className="text-sm font-pixel-line font-normal text-cabernet/90 dark:text-cream-100/90 mt-3 max-w-xl">
+        <p className="text-sm font-pixel-line font-semibold dark:font-normal text-cabernet/90 dark:text-cream-100/90 mt-3 max-w-xl">
           Verified academic and professional credentials in Data Science, AI/ML, Cloud Architecture, Cyber Security, and Software Engineering.
         </p>
       </section>

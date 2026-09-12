@@ -12,7 +12,7 @@ export const Experience = () => {
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tight">
           EXPERIENCE
         </h1>
-        <p className="text-sm font-pixel-line font-normal text-cabernet/90 dark:text-cream-100/90 mt-3 max-w-xl">
+        <p className="text-sm font-pixel-line font-semibold dark:font-normal text-cabernet/90 dark:text-cream-100/90 mt-3 max-w-xl">
           Professional experience spanning software engineering and AI/ML through internships at MPOnline Limited and Edunet Foundation, supported by AICTE and IBM SkillsBuild.
         </p>
       </section>
@@ -43,7 +43,7 @@ export const Experience = () => {
                 </h3>
               </div>
 
-              <ul className="space-y-3 text-sm font-pixel-line font-normal text-cabernet dark:text-cream-100 list-disc list-inside leading-relaxed">
+              <ul className="space-y-3 text-sm font-pixel-line font-semibold dark:font-normal text-cabernet dark:text-cream-100 list-disc list-inside leading-relaxed">
                 {exp.highlights.map((item, hIdx) => (
                   <li key={hIdx}>
                     {item}

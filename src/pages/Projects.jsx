@@ -13,7 +13,7 @@ export const Projects = () => {
           [ PORTFOLIO SHOWCASE ]
         </p>
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tight">PROJECTS</h1>
-        <p className="text-sm font-pixel-line font-normal text-cabernet/80 dark:text-cream-100/80 mt-3 max-w-xl">
+        <p className="text-sm font-pixel-line font-semibold dark:font-normal text-cabernet/80 dark:text-cream-100/80 mt-3 max-w-xl">
           Practical software applications, AI/ML models, parameter visualizers, and interactive digital systems.
         </p>
       </section>

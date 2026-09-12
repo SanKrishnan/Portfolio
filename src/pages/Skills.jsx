@@ -15,7 +15,7 @@ export const Skills = () => {
         <h1 className="text-4xl sm:text-6xl md:text-8xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tight">
           WHAT I WORK WITH
         </h1>
-        <p className="text-sm font-pixel-line font-normal text-cabernet/80 dark:text-cream-100/80 mt-3 max-w-xl">
+        <p className="text-sm font-pixel-line font-semibold dark:font-normal text-cabernet/80 dark:text-cream-100/80 mt-3 max-w-xl">
           Core languages, frameworks, AI libraries, data analytics tools, and cloud platforms. Hover over any technology to view details.
         </p>
       </section>

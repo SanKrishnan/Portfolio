@@ -75,7 +75,7 @@ export const Home = () => {
           <span className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
             [ EDITORIAL STATEMENT ]
           </span>
-          <p className="text-xl sm:text-3xl md:text-4xl font-pixel-line font-normal leading-relaxed text-cabernet dark:text-cream-100">
+          <p className="text-xl sm:text-3xl md:text-4xl font-pixel-line font-semibold dark:font-normal leading-relaxed text-cabernet dark:text-cream-100">
             "{personalInfo.shortBio}"
           </p>
         </motion.div>
@@ -126,7 +126,7 @@ export const Home = () => {
               <h3 className="text-2xl sm:text-4xl font-pixel-square font-bold text-cabernet dark:text-cream-100 uppercase">
                 {featuredProject.name}
               </h3>
-              <p className="text-base sm:text-lg font-pixel-line font-normal text-cabernet dark:text-cream-100 leading-relaxed">
+              <p className="text-base sm:text-lg font-pixel-line font-semibold dark:font-normal text-cabernet dark:text-cream-100 leading-relaxed">
                 {featuredProject.shortDescription}
               </p>
 

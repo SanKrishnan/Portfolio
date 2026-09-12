@@ -43,7 +43,7 @@ export const Contact = () => {
         <h1 className="text-5xl sm:text-7xl md:text-8xl font-pixel-square font-extrabold text-cabernet dark:text-cream-100 uppercase tracking-tighter leading-none">
           LET'S BUILD SOMETHING.
         </h1>
-        <p className="text-base sm:text-xl font-pixel-line font-normal text-cabernet dark:text-cream-100 max-w-xl">
+        <p className="text-base sm:text-xl font-pixel-line font-semibold dark:font-normal text-cabernet dark:text-cream-100 max-w-xl">
           Have an opportunity? Want to collaborate on software, AI/ML models, or data analytics projects? Let's talk.
         </p>
       </section>
