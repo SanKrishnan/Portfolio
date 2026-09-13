@@ -6,7 +6,7 @@ export const Skills = () => {
   const [activeSkill, setActiveSkill] = useState(null);
 
   return (
-    <div className="space-y-16">
+    <div className="space-y-10 pb-32">
       {/* Title */}
       <section className="border-b border-cabernet/15 dark:border-cream-100/15 pb-8">
         <p className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-2">
@@ -21,7 +21,7 @@ export const Skills = () => {
       </section>
 
       {/* Skills Categories & Interactive Landscape (No numeric prefixes) */}
-      <section className="space-y-16">
+      <section className="space-y-10">
         {skillsCategories.map((category) => (
           <div key={category.title} className="space-y-6">
             <div className="flex items-center justify-between border-b border-cabernet/15 dark:border-cream-100/15 pb-3">
@@ -56,8 +56,10 @@ export const Skills = () => {
                       <span className={`w-2 h-2 rounded-full ${isHovered ? 'bg-flame' : 'bg-cabernet/40 dark:bg-cream-100/40'}`} />
                     </div>
 
-                    <p className={`text-xs font-pixel-line mt-3 line-clamp-3 transition-opacity ${
-                      isHovered ? 'text-cream-100/90 dark:text-cream-100/95 font-medium' : 'text-cabernet/90 dark:text-cream-100/90 font-medium'
+                    <p className={`text-sm font-pixel-line mt-3 line-clamp-3 leading-relaxed transition-opacity ${
+                      isHovered
+                        ? 'text-cream-100/95 dark:text-cream-100/95 font-semibold'
+                        : 'text-cabernet/95 dark:text-cream-100/90 font-semibold'
                     }`}>
                       {skill.description}
                     </p>

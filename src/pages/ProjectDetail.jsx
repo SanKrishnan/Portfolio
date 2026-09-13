@@ -120,8 +120,8 @@ export const ProjectDetail = () => {
       {/* Problem & Approach Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-10 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div className="space-y-4">
-          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
-            01 / THE PROBLEM
+          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold">
+            THE PROBLEM
           </h3>
           <h2 className="text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             What this project was designed to solve
@@ -132,13 +132,13 @@ export const ProjectDetail = () => {
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
-            02 / THE APPROACH & IDEA
+          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold">
+            THE APPROACH & IDEA
           </h3>
           <h2 className="text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             Engineering & Technical Solution
           </h2>
-          <p className="text-base font-pixel-line font-normal leading-relaxed text-cabernet/90 dark:text-cream-100">
+          <p className="text-base font-pixel-line font-semibold leading-relaxed text-cabernet/92 dark:text-cream-100">
             {project.approach}
           </p>
         </div>
@@ -147,8 +147,8 @@ export const ProjectDetail = () => {
       {/* Major Features Breakdown */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
-          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
-            03 / WHAT'S INSIDE
+          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
+            WHAT'S INSIDE
           </h3>
           <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             Key Application Features
@@ -173,8 +173,8 @@ export const ProjectDetail = () => {
       {/* How it Works / Workflow */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
-          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
-            04 / HOW IT WORKS
+          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
+            HOW IT WORKS
           </h3>
           <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             Execution Flow
@@ -190,7 +190,7 @@ export const ProjectDetail = () => {
               <span className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
                 STEP 0{idx + 1}
               </span>
-              <p className="text-xs font-pixel-line text-cabernet dark:text-cream-100 font-medium">
+              <p className="text-xs font-pixel-line font-semibold text-cabernet dark:text-cream-100 font-medium">
                 {step.replace(/^\d+\.\s*/, '')}
               </p>
             </div>
@@ -201,8 +201,8 @@ export const ProjectDetail = () => {
       {/* Media / Interface Container */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
-          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
-            05 / PROJECT MEDIA & INTERFACE
+          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
+            PROJECT MEDIA & INTERFACE
           </h3>
           <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             Visual Architecture
@@ -225,7 +225,7 @@ export const ProjectDetail = () => {
             <h4 className="text-lg font-pixel-square font-bold text-cabernet dark:text-cream-100">
               Art-Directed Technical Case Study Visual
             </h4>
-            <p className="text-xs font-pixel-line text-cabernet/90 dark:text-cream-100/90 font-medium max-w-lg mx-auto">
+            <p className="text-xs font-pixel-line font-semibold text-cabernet/90 dark:text-cream-100/90 font-medium max-w-lg mx-auto">
               Interactive application mockups and high-resolution video demonstrations are integrated cleanly during live deployment testing.
             </p>
           </div>
@@ -234,10 +234,10 @@ export const ProjectDetail = () => {
 
       {/* Technical Learnings */}
       <section className="space-y-4 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
-        <h3 className="text-xs font-pixel-square uppercase tracking-widest text-flame font-bold">
-          06 / TECHNICAL LESSONS & TAKEAWAYS
+        <h3 className="text-s font-pixel-square uppercase tracking-widest text-flame font-bold">
+          TECHNICAL LESSONS & TAKEAWAYS
         </h3>
-        <p className="text-base font-pixel-line font-normal leading-relaxed text-cabernet/90 dark:text-cream-100 bg-almond-50 dark:bg-cream-100/5 p-6 rounded-2xl border border-cabernet/15 dark:border-cream-100/15">
+        <p className="text-base font-pixel-line  font-semibold font-normal leading-relaxed text-cabernet/90 dark:text-cream-100 bg-almond-50 dark:bg-cream-100/5 p-6 rounded-2xl border border-cabernet/15 dark:border-cream-100/15">
           "{project.learnings}"
         </p>
       </section>

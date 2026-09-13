@@ -131,7 +131,7 @@ export const Projects = () => {
                         <h3 className="text-xl sm:text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100 uppercase">
                           {project.name}
                         </h3>
-                        <p className="text-xs font-pixel-line text-cabernet/90 dark:text-cream-100/90 font-medium line-clamp-2">
+                        <p className="text-xs font-pixel-line text-cabernet/95 dark:text-cream-100/90 font-semibold line-clamp-2">
                           {project.problem}
                         </p>
                       </div>

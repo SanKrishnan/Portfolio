@@ -162,7 +162,7 @@ export const Home = () => {
                 <p className="text-xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
                   ~75% Reduction in LLM Hallucinations across 15+ Test Scenarios
                 </p>
-                <p className="text-xs font-pixel-line text-cabernet/90 dark:text-cream-100/90 font-medium">
+                <p className="text-xs font-pixel-line font-semibold text-cabernet/90 dark:text-cream-100/90 font-medium">
                   Sub-second natural language and voice order processing powered by FastAPI and Groq (Llama 3.2).
                 </p>
               </div>
@@ -273,7 +273,7 @@ export const Home = () => {
                   AI-Powered Lecture Assistant
                 </p>
 
-                <p className="text-xs sm:text-sm text-cabernet/90 dark:text-cream-100/90 font-medium leading-relaxed">
+                <p className="text-xs sm:text-sm text-cabernet/90 dark:text-cream-100/90 font-semibold leading-relaxed">
                   Speech transcription, text summarization, question generation,
                   and automated study-material creation using NLP and
                   transformer-based models.

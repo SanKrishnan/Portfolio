@@ -53,7 +53,7 @@ export const About = () => {
             <h3 className="text-xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
               Vellore Institute Of Technology, Bhopal
             </h3>
-            <p className="text-sm font-pixel-line text-cabernet/90 dark:text-cream-100/90 font-medium">
+            <p className="text-sm font-pixel-line text-cabernet/95 dark:text-cream-100/90 font-semibold">
               B.Tech in Computer Science & Engineering
             </p>
             <p className="text-xs font-pixel-line text-cabernet dark:text-cream-100 font-semibold">

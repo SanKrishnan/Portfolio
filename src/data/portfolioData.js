@@ -227,54 +227,53 @@ export const skillsCategories = [
   {
     title: "SOFTWARE DEVELOPMENT",
     skills: [
-      { name: "Java", description: "Object-oriented programming, data structures, algorithms, and OOP concepts." },
-      { name: "Python", description: "Primary language for full-stack backends, machine learning pipelines, and data analytics." },
-      { name: "SQL", description: "Relational database schema management, complex joins, queries, and transactions." },
-      { name: "React.js", description: "Component-driven single-page web applications, custom hooks, and dynamic state management." },
-      { name: "FastAPI", description: "High-performance asynchronous Python web framework for REST APIs and LLM microservices." },
-      { name: "Django REST", description: "Enterprise REST API development, serialization, JWT authentication, and database ORM." },
-      { name: "JavaScript", description: "ES6+ asynchronous web development, HTML5/CSS3, DOM manipulation, and browser APIs." }
+      { name: "Java", description: "OOP · DSA · Algorithms · Problem Solving" },
+      { name: "Python", description: "Backend APIs · ML Pipelines · Data Analysis" },
+      { name: "SQL", description: "Relational Data · Queries · Joins · Transactions" },
+      { name: "React.js", description: "Components · Hooks · State · SPA Development" },
+      { name: "FastAPI", description: "Async APIs · REST · LLM Services · Microservices" },
+      { name: "Django REST", description: "REST APIs · JWT · Serialization · Database ORM" },
+      { name: "JavaScript", description: "ES6+ · DOM · Browser APIs · Web Development" }
     ]
   },
   {
     title: "AI / MACHINE LEARNING",
     skills: [
-      { name: "NLP", description: "Natural Language Processing, tokenization, text cleaning, summarization, and Q&A workflows." },
-      { name: "Hugging Face", description: "Pre-trained transformer pipelines (BART-large-CNN, T5) and model integration." },
-      { name: "LLMs & Voice", description: "OpenAI Whisper speech recognition, Groq (Llama 3.2), Ollama local execution, prompt optimization." },
-      { name: "Machine Learning", description: "Supervised and unsupervised ML algorithms, model evaluation, and EDA." }
+      { name: "NLP", description: "Text Processing · Tokenization · Summarization · Q&A" },
+      { name: "Hugging Face", description: "Transformers · BART · T5 · Model Integration" },
+      { name: "LLMs & Voice", description: "Whisper · Llama 3.2 · Ollama · Prompt Engineering" },
+      { name: "Machine Learning", description: "Supervised · Unsupervised · Model Evaluation · EDA" }
     ]
   },
   {
     title: "DATA & ANALYTICS",
     skills: [
-      { name: "Pandas", description: "Data cleaning, feature transformation, dataframe processing, and analytics pipelines." },
-      { name: "NumPy", description: "High-performance array computations, matrix operations, and numerical analysis." },
-      { name: "Power BI", description: "Interactive business intelligence dashboards, DAX calculations, and sales analytics." },
-      { name: "Tableau", description: "Data visualization dashboards, trend analysis, and visual reporting." },
-      { name: "Data Cleaning", description: "Handling missing values, outlier detection, data standardization, and EDA." }
+      { name: "Pandas", description: "Data Cleaning · Transformation · DataFrames · Analytics" },
+      { name: "NumPy", description: "Arrays · Matrix Operations · Computation · Numerical Analysis" },
+      { name: "Power BI", description: "BI Dashboards · DAX · KPIs · Sales Analytics" },
+      { name: "Tableau", description: "Data Visualization · Trends · Dashboards · Reporting" },
+      { name: "Data Cleaning", description: "Missing Values · Outliers · Standardization · EDA" }
     ]
   },
   {
     title: "CLOUD & BACKEND",
     skills: [
-      { name: "PostgreSQL", description: "Relational database management, transactional query execution, and database indexing." },
-      { name: "Supabase", description: "Cloud PostgreSQL backend services, data persistence, and real-time database hosting." },
-      { name: "MySQL", description: "Relational database management, SQL queries, and schema normalization." },
-      { name: "REST APIs", description: "Designing secure JSON RESTful endpoints with JWT authentication." }
+      { name: "PostgreSQL", description: "Relational Data · Transactions · Queries · Indexing" },
+      { name: "Supabase", description: "Cloud PostgreSQL · Data Persistence · Real-Time Backend" },
+      { name: "MySQL", description: "SQL Queries · Relational Data · Schema Design · Normalization" },
+      { name: "REST APIs", description: "JSON APIs · Secure Endpoints · JWT · Backend Integration" }
     ]
   },
   {
     title: "TOOLS & WEB",
     skills: [
-      { name: "Git & GitHub", description: "Distributed version control, repository management, and project collaboration." },
-      { name: "Postman", description: "API endpoint testing, payload inspection, and request validation." },
-      { name: "Streamlit", description: "Rapid prototyping and deployment of Python AI/ML and data applications." },
-      { name: "ReportLab", description: "Programmatic PDF generation and dynamic invoice/report layout rendering." }
+      { name: "Git & GitHub", description: "Version Control · Repositories · Collaboration · Git Workflows" },
+      { name: "Postman", description: "API Testing · Requests · Payloads · Validation" },
+      { name: "Streamlit", description: "AI/ML Apps · Data Apps · Rapid Prototyping · Deployment" },
+      { name: "ReportLab", description: "PDF Generation · Reports · Invoices · Document Automation" }
     ]
   }
 ];
-
 export const experience = [
   {
     role: "Software Engineering & AI Intern",

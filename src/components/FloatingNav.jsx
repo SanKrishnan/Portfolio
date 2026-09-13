@@ -16,11 +16,11 @@ import { useTheme } from '../context/ThemeContext';
 
 const navItems = [
   { path: '/', label: 'HOME', icon: Home },
-  { path: '/projects', label: 'PROJECTS', icon: FolderKanban },
   { path: '/about', label: 'ABOUT', icon: User },
   { path: '/skills', label: 'SKILLS', icon: Cpu },
+  { path: '/projects', label: 'PROJECT', icon: FolderKanban },
   { path: '/experience', label: 'EXPERIENCE', icon: Briefcase },
-  { path: '/certifications', label: 'CERTS', fullLabel: 'CERTIFICATIONS', icon: Award },
+  { path: '/certifications', label: 'CERT', fullLabel: 'CERTIFICATIONS', icon: Award },
   { path: '/contact', label: 'CONTACT', icon: Mail },
 ];
 
