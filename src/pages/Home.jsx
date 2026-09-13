@@ -225,7 +225,7 @@ export const Home = () => {
                 IBM SkillsBuild India · AICTE Internship
               </p>
 
-              <p className="text-base sm:text-lg font-pixel-line font-normal text-cabernet dark:text-cream-100 leading-relaxed">
+              <p className="text-base sm:text-lg font-pixel-line font-semibold dark:font-normal text-cabernet dark:text-cream-100 leading-relaxed">
                 Worked on an AI-powered lecture assistant involving speech-to-text,
                 NLP-based summarization, question generation, and automated PDF
                 generation using Python, Whisper, Hugging Face Transformers, and Streamlit.
@@ -273,7 +273,7 @@ export const Home = () => {
                   AI-Powered Lecture Assistant
                 </p>
 
-                <p className="text-xs sm:text-sm font-pixel-line text-cabernet/90 dark:text-cream-100/90 font-medium leading-relaxed">
+                <p className="text-xs sm:text-sm text-cabernet/90 dark:text-cream-100/90 font-medium leading-relaxed">
                   Speech transcription, text summarization, question generation,
                   and automated study-material creation using NLP and
                   transformer-based models.

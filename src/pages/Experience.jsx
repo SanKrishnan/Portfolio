@@ -38,9 +38,7 @@ export const Experience = () => {
                 <h2 className="text-2xl sm:text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100 uppercase tracking-tight">
                   {exp.role}
                 </h2>
-                <h3 className="text-sm font-pixel-square text-flame mt-1 font-semibold">
-                  {exp.company}
-                </h3>
+                <h3 className="text-sm font-pixel-square text-flame mt-1 font-semibold">{exp.company}</h3>
               </div>
 
               <ul className="space-y-3 text-sm font-pixel-line font-semibold dark:font-normal text-cabernet dark:text-cream-100 list-disc list-inside leading-relaxed">
