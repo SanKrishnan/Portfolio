@@ -114,7 +114,7 @@ export const projects = [
       "4. Custom 4-Pass Regex & T5 Engine Generate Study Material & PDF"
     ],
     screenshots: [],
-    video: "",
+    video: "/videos/letunote-demo.mp4",
     github: "https://github.com/SanKrishnan/Lectures-to-Notes-Generator",
     website: "https://huggingface.co/spaces/SanKrishnan/LetUNote_AI",
     liveDemo: "https://huggingface.co/spaces/SanKrishnan/LetUNote_AI",
@@ -151,7 +151,7 @@ export const projects = [
       "4. React UI Renders Interactive Charts & Downloadable PDF Report"
     ],
     screenshots: [],
-    video: "",
+    video: "/videos/fossee-demo.mp4",
     github: "https://github.com/SanKrishnan/Chemical-Equipment-Parameter-Visualizer",
     liveDemo: "",
     learnings: "Strengthened full-stack React-Django REST integration, secure JWT session control, and dynamic PDF report generation."

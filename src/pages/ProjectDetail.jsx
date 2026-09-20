@@ -197,7 +197,33 @@ export const ProjectDetail = () => {
           ))}
         </div>
       </section>
+      
+      {/* Project Demo Video */}
+      {project.demoVideo && (
+        <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
+          <div>
+            <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
+              PROJECT DEMO
+            </h3>
 
+            <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
+              See It In Action
+            </h2>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
+            <video
+              className="w-full h-auto"
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source src={project.demoVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+      )}
       {/* Media / Interface Container */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
