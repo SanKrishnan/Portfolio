@@ -26,7 +26,7 @@ export const ProjectDetail = () => {
   }
 
   const nextProject = projects[(projectIndex + 1) % projects.length];
-  const liveUrl = project.website || project.liveDemo;
+  const liveUrl = project.website;
 
   return (
     <article className="space-y-16 max-w-5xl mx-auto">
@@ -227,19 +227,32 @@ export const ProjectDetail = () => {
       {/* Media / Interface Container */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
-          <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
+          <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
             PROJECT MEDIA & INTERFACE
           </h3>
+
           <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
             Visual Architecture
           </h2>
         </div>
 
-        {project.image ? (
+        {project.video ? (
+          <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
+            <video
+              className="w-full h-auto block"
+              controls
+              playsInline
+              preload="metadata"
+            >
+              <source src={project.video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        ) : project.image ? (
           <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl">
-            <img 
-              src={project.image} 
-              alt={project.name} 
+            <img
+              src={project.image}
+              alt={project.name}
               className="w-full h-auto max-h-[550px] object-cover opacity-100"
             />
           </div>
@@ -248,10 +261,12 @@ export const ProjectDetail = () => {
             <div className="inline-block p-4 rounded-full bg-flame/15 text-flame mb-2">
               <span className="text-2xl font-pixel-square font-bold">SK</span>
             </div>
+
             <h4 className="text-lg font-pixel-square font-bold text-cabernet dark:text-cream-100">
               Art-Directed Technical Case Study Visual
             </h4>
-            <p className="text-xs font-pixel-line font-semibold text-cabernet/90 dark:text-cream-100/90 font-medium max-w-lg mx-auto">
+
+            <p className="text-sm font-pixel-line font-semibold text-cabernet/95 dark:text-cream-100/90 max-w-lg mx-auto leading-relaxed">
               Interactive application mockups and high-resolution video demonstrations are integrated cleanly during live deployment testing.
             </p>
           </div>
@@ -268,7 +283,7 @@ export const ProjectDetail = () => {
         </p>
       </section>
 
-      {/* External Repository & Live Demo Links */}
+      {/* External Repository & Live Website Links */}
       <section className="flex flex-wrap items-center gap-4 pt-6">
         {project.github && (
           <a
@@ -294,7 +309,7 @@ export const ProjectDetail = () => {
             data-cursor-label="LIVE DEMO"
           >
             <Globe className="w-4 h-4 text-flame" />
-            <span>LIVE DEMO / WEBSITE →</span>
+            <span>LIVE WEBSITE →</span>
           </a>
         )}
       </section>
