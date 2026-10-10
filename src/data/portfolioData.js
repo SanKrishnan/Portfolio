@@ -81,13 +81,13 @@ export const projects = [
             title: "Manual & Chat-Based Ordering",
             description:
               "Manual ordering, chat ordering, and order PDF generation.",
-            src: "public/videos/savoury-sweet-1.mp4",
+            src: "/videos/savoury-sweet-1.mp4",
           },
           {
             title: "Voice Ordering, Dashboard & PDF Generation",
             description:
               "Voice API ordering, dashboard management, and order PDF generation.",
-            src: "public/videos/savoury-sweet-2.mp4",
+            src: "/videos/savoury-sweet-2.mp4",
           },
         ],
     architecture: {
