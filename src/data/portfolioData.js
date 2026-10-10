@@ -76,7 +76,33 @@ export const projects = [
       "4. Order Persisted to Supabase & Automated PDF Invoice Generated"
     ],
     screenshots: [],
-    video: "",
+    videos: [
+          {
+            title: "Manual & Chat-Based Ordering",
+            description:
+              "Manual ordering, chat ordering, and order PDF generation.",
+            src: "public/videos/savoury-sweet-1.mp4",
+          },
+          {
+            title: "Voice Ordering, Dashboard & PDF Generation",
+            description:
+              "Voice API ordering, dashboard management, and order PDF generation.",
+            src: "public/videos/savoury-sweet-2.mp4",
+          },
+        ],
+    architecture: {
+      subtitle: "AI-Powered Conversational Ordering & Analytics Platform",
+      demoDescription: "A walkthrough of Savoury & Sweet Co. - from natural-language and voice ordering to AI-assisted cart management, order processing, invoice generation, and business analytics.",
+      description: "Savoury & Sweet Co. combines conversational AI, a FastAPI backend, Supabase PostgreSQL, automated invoice generation, and business analytics into a complete bakery ordering workflow.",
+      pipeline: [
+        { title: "01 — CUSTOMER INPUT", description: "Natural-language or voice-based bakery ordering" },
+        { title: "02 — AI CONVERSATION", description: "Llama-based conversational AI interprets customer requests and product questions" },
+        { title: "03 — ORDER PROCESSING", description: "FastAPI backend processes the conversation, validates the order, and updates the shopping basket" },
+        { title: "04 — DATA & STORAGE", description: "Supabase PostgreSQL stores order information and Supabase Storage stores generated invoices" },
+        { title: "05 — INVOICE GENERATION", description: "ReportLab generates a PDF invoice after order confirmation" },
+        { title: "06 — ANALYTICS", description: "Chart.js and Power BI transform order data into revenue, product, order-volume, and business insights" }
+      ]
+    },
     github: "https://github.com/SanKrishnan/Savoury-Sweet",
     website: "https://savoury-sweet.vercel.app/",
     liveDemo: "https://savoury-sweet.vercel.app/",
@@ -115,6 +141,19 @@ export const projects = [
     ],
     screenshots: [],
     video: "/videos/letunote-demo.mp4",
+    architecture: {
+      subtitle: "AI-Powered Lecture Transcription & Study Assistant",
+      demoDescription: "A walkthrough of LETUNOTE AI - from lecture audio upload and transcription to summarization, question generation, and PDF export.",
+      description: "LETUNOTE AI uses a modular NLP pipeline that transforms lecture recordings into structured study material through speech recognition, text preprocessing, summarization, question generation, and automated PDF export.",
+      pipeline: [
+        { title: "01 — AUDIO INPUT", description: "Lecture recording uploaded through Streamlit" },
+        { title: "02 — SPEECH-TO-TEXT", description: "Whisper transcription" },
+        { title: "03 — TEXT CLEANING", description: "Custom 4-pass regex preprocessing" },
+        { title: "04 — SUMMARIZATION", description: "BART-large-CNN" },
+        { title: "05 — QUESTION GENERATION", description: "T5-based study questions" },
+        { title: "06 — PDF EXPORT", description: "ReportLab-generated study material" }
+      ]
+    },
     github: "https://github.com/SanKrishnan/Lectures-to-Notes-Generator",
     website: "https://huggingface.co/spaces/SanKrishnan/LetUNote_AI",
     liveDemo: "https://huggingface.co/spaces/SanKrishnan/LetUNote_AI",
@@ -152,6 +191,19 @@ export const projects = [
     ],
     screenshots: [],
     video: "/videos/fossee-demo.mp4",
+    architecture: {
+      subtitle: "Full-Stack Chemical Equipment Analytics Dashboard",
+      demoDescription: "A walkthrough of the Chemical Equipment Parameter Visualizer - from CSV dataset upload and Pandas preprocessing to interactive chart generation, JWT-authenticated API delivery, and automated PDF analytics report export.",
+      description: "The Chemical Equipment Parameter Visualizer combines a Pandas analytics pipeline, a Django REST Framework API with JWT authentication, and a React frontend to transform raw industrial CSV datasets into interactive visualizations and downloadable PDF reports.",
+      pipeline: [
+        { title: "01 — CSV UPLOAD", description: "Industrial equipment dataset uploaded as a CSV file" },
+        { title: "02 — PANDAS PIPELINE", description: "Pandas cleans, preprocesses, and aggregates equipment parameter data" },
+        { title: "03 — ANALYTICS ENGINE", description: "Statistical summaries and parameter trends computed across 5+ equipment types" },
+        { title: "04 — JWT REST API", description: "Django REST Framework delivers the analytical payload through JWT-authenticated endpoints" },
+        { title: "05 — REACT CHARTS", description: "React renders interactive pie and bar chart visualizations from the API response" },
+        { title: "06 — PDF REPORT", description: "ReportLab generates a downloadable PDF analytics report on demand" }
+      ]
+    },
     github: "https://github.com/SanKrishnan/Chemical-Equipment-Parameter-Visualizer",
     liveDemo: "",
     learnings: "Strengthened full-stack React-Django REST integration, secure JWT session control, and dynamic PDF report generation."
@@ -183,7 +235,20 @@ export const projects = [
       "4. Update Tkinter GUI Widgets"
     ],
     screenshots: [],
-    video: "",
+    video: "/videos/weathernow-demo.mp4",
+    architecture: {
+      subtitle: "Desktop Meteorological Application",
+      demoDescription: "A walkthrough of the Weather Dashboard - from city name input to asynchronous OpenWeather API querying, JSON parsing, and live GUI rendering of temperature, humidity, and weather conditions.",
+      description: "The Weather Dashboard is a lightweight Python desktop application that asynchronously queries the OpenWeather REST API and presents structured meteorological metrics — temperature, humidity, and conditions — inside a clean Tkinter GUI, without advertisements or visual clutter.",
+      pipeline: [
+        { title: "01 — CITY INPUT", description: "User enters a city name into the Tkinter interface" },
+        { title: "02 — API REQUEST", description: "Asynchronous HTTP request sent to OpenWeather REST API" },
+        { title: "03 — JSON PARSING", description: "API JSON response payload is parsed for weather metrics" },
+        { title: "04 — DATA EXTRACTION", description: "Temperature, humidity, wind speed, and condition status extracted" },
+        { title: "05 — GUI UPDATE", description: "Tkinter widgets updated with live weather metrics" },
+        { title: "06 — DISPLAY", description: "Clean desktop interface shows current weather without ads or distractions" }
+      ]
+    },
     github: "https://github.com/SanKrishnan/WeatherNow",
     website: "https://weather-8g66e7bx5-sanjana-krishnans-projects.vercel.app/",
     liveDemo: "https://weather-8g66e7bx5-sanjana-krishnans-projects.vercel.app/",
@@ -196,6 +261,8 @@ export const projects = [
     tagline: "Epidemiological Data Cleaning & Analytics Application",
     category: "Data Analytics",
     accentColor: "#72D9D2", // Aqua
+    projectType: "School Project",
+    projectYear: "2022",
     shortDescription: "Data analytics application using Pandas, Matplotlib, and Tkinter to process pandemic datasets and visualize trends.",
     problem: "Raw pandemic datasets require systematic preprocessing, aggregation, and visual plot generation to extract infection trends.",
     approach: "Developed a Python analytics pipeline using Pandas for data cleaning and Matplotlib for generating analytical figures, embedded within a Tkinter desktop application.",
@@ -217,6 +284,20 @@ export const projects = [
     ],
     screenshots: [],
     video: "",
+    demoLabel: "ORIGINAL PROJECT DEMO · 2022",
+    architecture: {
+      subtitle: "COVID-19 Data Analysis & Visualization · School Project, 2022",
+      demoDescription: "A walkthrough of my 2022 school project — a COVID-19 data analysis application developed to explore pandemic data through Python, Pandas, Matplotlib, and Tkinter. The video shows the original 2022 implementation.",
+      description: "This school project was developed in 2022 to explore COVID-19 data using Python-based data processing, analysis, visualization, and a Tkinter interface.",
+      pipeline: [
+        { title: "01 — CSV LOAD", description: "Global pandemic CSV records loaded into the application" },
+        { title: "02 — DATA CLEANING", description: "Pandas removes missing values, corrects data types, and standardizes records" },
+        { title: "03 — AGGREGATION", description: "Regional and temporal infection metrics aggregated from cleaned dataset" },
+        { title: "04 — TREND ANALYSIS", description: "Statistical trends computed across countries, dates, and infection categories" },
+        { title: "05 — PLOT GENERATION", description: "Matplotlib generates analytical charts and epidemiological figures" },
+        { title: "06 — DESKTOP VIEW", description: "Plots embedded and displayed inside the interactive Tkinter desktop app" }
+      ]
+    },
     github: "https://github.com/SanKrishnan/COVID-Insight-Visualizer",
     liveDemo: "",
     learnings: "Enhanced data wrangling with Pandas, statistical plotting with Matplotlib, and desktop GUI embedding."

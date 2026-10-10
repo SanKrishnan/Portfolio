@@ -53,16 +53,21 @@ export const ProjectDetail = () => {
         <p className="text-lg sm:text-2xl font-pixel-line font-semibold dark:font-normal text-flame">
           {project.tagline}
         </p>
+        {project.projectType && project.projectYear && (
+          <span className="inline-block text-xs font-pixel-line uppercase tracking-widest font-bold text-cabernet/60 dark:text-cream-100/50 border border-cabernet/20 dark:border-cream-100/20 rounded-full px-3 py-1">
+            {project.projectType.toUpperCase()} · {project.projectYear}
+          </span>
+        )}
       </header>
 
       {/* Hero Accent Banner with soft lavender glow */}
-      <div 
+      <div
         className="relative overflow-hidden rounded-3xl p-8 sm:p-12 border border-cabernet/20 dark:border-cream-100/20 bg-cabernet dark:bg-darkForest text-cream-100 shadow-2xl"
         style={{
           boxShadow: `0 20px 50px -10px rgba(185, 167, 232, 0.22)`
         }}
       >
-        <div 
+        <div
           className="absolute -right-20 -bottom-20 w-96 h-96 rounded-full blur-3xl opacity-30 pointer-events-none"
           style={{ backgroundColor: "rgba(185, 167, 232, 0.25)" }}
         />
@@ -97,11 +102,11 @@ export const ProjectDetail = () => {
         <section className="space-y-4 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
           <h3 className="text-xs font-pixel-square uppercase tracking-widest text-flame font-bold flex items-center gap-2">
             <TrendingUp className="w-4 h-4" />
-            <span>MEASURABLE PERFORMANCE & QUANTITATIVE RESULTS</span>
+            <span>MEASURABLE PERFORMANCE &amp; QUANTITATIVE RESULTS</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {project.metrics.map((metric, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="p-5 rounded-2xl border border-flame/40 bg-flame/10 text-cabernet dark:text-cream-100 space-y-1"
               >
@@ -133,10 +138,10 @@ export const ProjectDetail = () => {
 
         <div className="space-y-4">
           <h3 className="text-s font-pixel-line uppercase tracking-widest text-flame font-bold">
-            THE APPROACH & IDEA
+            THE APPROACH &amp; IDEA
           </h3>
           <h2 className="text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
-            Engineering & Technical Solution
+            Engineering &amp; Technical Solution
           </h2>
           <p className="text-base font-pixel-line font-semibold leading-relaxed text-cabernet/92 dark:text-cream-100">
             {project.approach}
@@ -197,86 +202,147 @@ export const ProjectDetail = () => {
           ))}
         </div>
       </section>
-      
-      {/* Project Demo Video */}
-      {project.demoVideo && (
-        <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
-          <div>
-            <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
-              PROJECT DEMO
-            </h3>
 
-            <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
-              See It In Action
-            </h2>
-          </div>
-
-          <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
-            <video
-              className="w-full h-auto"
-              controls
-              playsInline
-              preload="metadata"
-            >
-              <source src={project.demoVideo} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </section>
-      )}
-      {/* Media / Interface Container */}
+      {/* System Architecture & Demo */}
       <section className="space-y-6 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <div>
           <h3 className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold mb-1">
-            PROJECT MEDIA & INTERFACE
+            SYSTEM ARCHITECTURE &amp; DEMO
           </h3>
-
           <h2 className="text-3xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
-            Visual Architecture
+            {project.architecture ? project.architecture.subtitle : ''}
           </h2>
         </div>
 
-        {project.video ? (
-          <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
-            <video
-              className="w-full h-auto block"
-              controls
-              playsInline
-              preload="metadata"
-            >
-              <source src={project.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        ) : project.image ? (
-          <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl">
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-auto max-h-[550px] object-cover opacity-100"
-            />
-          </div>
-        ) : (
-          <div className="border border-dashed border-cabernet/30 dark:border-cream-100/30 rounded-3xl p-12 text-center bg-almond-50 dark:bg-nearblack-50 space-y-4">
-            <div className="inline-block p-4 rounded-full bg-flame/15 text-flame mb-2">
-              <span className="text-2xl font-pixel-square font-bold">SK</span>
+        {project.architecture ? (
+          <div className="space-y-12">
+            {/* Live Application Demonstration */}
+            <div className="space-y-4">
+              <div className="text-center space-y-2 mb-6">
+                <span className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
+                  LIVE APPLICATION DEMONSTRATION
+                </span>
+                {(project.video || project.videos?.length > 0) && (
+                  <p className="text-sm font-pixel-line font-semibold text-cabernet/90 dark:text-cream-100 max-w-2xl mx-auto">
+                    {project.architecture.demoDescription}
+                  </p>
+                )}
+              </div>           
+            {project.slug === "savoury-sweet-co" ? (
+              project.videos?.map((video) => (
+                <div key={video.src} className="space-y-4">
+                  <div className="space-y-2">
+                    <h3 className="text-xl font-pixel-square font-bold text-cabernet dark:text-cream-100">
+                      {video.title}
+                    </h3>
+                    <p className="text-sm font-pixel-line font-semibold text-cabernet/90 dark:text-cream-100">
+                      {video.description}
+                    </p>
+                  </div>
+
+                  <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
+                    <video
+                      className="w-full h-auto block"
+                      controls
+                      playsInline
+                      preload="metadata"
+                    >
+                      <source src={video.src} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              ))
+                  ) : (
+                    project.video && (
+                      <div className="space-y-3">
+                        {project.demoLabel && (
+                          <div className="text-center">
+                            <span className="text-xs font-pixel-line uppercase tracking-widest font-bold text-flame/80 border border-flame/30 rounded-full px-3 py-1">
+                              {project.demoLabel}
+                            </span>
+                          </div>
+                        )}
+
+                        <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
+                          <video
+                            className="w-full h-auto block"
+                            controls
+                            playsInline
+                            preload="metadata"
+                          >
+                            <source src={project.video} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                        </div>
+                      </div>
+                    )
+                  )}
             </div>
 
-            <h4 className="text-lg font-pixel-square font-bold text-cabernet dark:text-cream-100">
-              Art-Directed Technical Case Study Visual
-            </h4>
+            {/* Technical Pipeline */}
+            <div className="space-y-6 mt-12">
+              <div className="text-center">
+                <span className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold">
+                  TECHNICAL PIPELINE
+                </span>
+              </div>
 
-            <p className="text-sm font-pixel-line font-semibold text-cabernet/95 dark:text-cream-100/90 max-w-lg mx-auto leading-relaxed">
-              Interactive application mockups and high-resolution video demonstrations are integrated cleanly during live deployment testing.
-            </p>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                {project.architecture.pipeline.map((step, idx) => (
+                  <React.Fragment key={idx}>
+                    <div className="flex-1 w-full p-4 border border-cabernet/15 dark:border-cream-100/15 rounded-2xl bg-almond-50 dark:bg-nearblack-50 text-center">
+                      <span className="text-xs font-pixel-line uppercase tracking-widest text-flame font-bold block mb-1">{step.title}</span>
+                      <p className="text-xs font-pixel-line font-semibold text-cabernet dark:text-cream-100">{step.description}</p>
+                    </div>
+                    {idx < project.architecture.pipeline.length - 1 && (
+                      <ArrowRight className="w-6 h-6 text-flame rotate-90 md:rotate-0 shrink-0" />
+                    )}
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+
+            {/* Architecture description */}
+            <div className="mt-8 text-center">
+              <p className="text-sm font-pixel-line font-semibold text-cabernet/95 dark:text-cream-100/90 max-w-3xl mx-auto leading-relaxed">
+                {project.architecture.description}
+              </p>
+            </div>
           </div>
+        ) : (
+          // Fallback for projects without architecture data
+          project.video ? (
+            <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl bg-nearblack">
+              <video className="w-full h-auto block" controls playsInline preload="metadata">
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ) : project.image ? (
+            <div className="overflow-hidden rounded-3xl border border-cabernet/20 dark:border-cream-100/20 shadow-2xl">
+              <img src={project.image} alt={project.name} className="w-full h-auto max-h-[550px] object-cover opacity-100" />
+            </div>
+          ) : (
+            <div className="border border-dashed border-cabernet/30 dark:border-cream-100/30 rounded-3xl p-12 text-center bg-almond-50 dark:bg-nearblack-50 space-y-4">
+              <div className="inline-block p-4 rounded-full bg-flame/15 text-flame mb-2">
+                <span className="text-2xl font-pixel-square font-bold">SK</span>
+              </div>
+              <h4 className="text-lg font-pixel-square font-bold text-cabernet dark:text-cream-100">
+                Art-Directed Technical Case Study Visual
+              </h4>
+              <p className="text-sm font-pixel-line font-semibold text-cabernet/95 dark:text-cream-100/90 max-w-lg mx-auto leading-relaxed">
+                Interactive application mockups and high-resolution video demonstrations are integrated cleanly during live deployment testing.
+              </p>
+            </div>
+          )
         )}
       </section>
 
       {/* Technical Learnings */}
       <section className="space-y-4 border-t border-cabernet/15 dark:border-cream-100/15 pt-12">
         <h3 className="text-s font-pixel-square uppercase tracking-widest text-flame font-bold">
-          TECHNICAL LESSONS & TAKEAWAYS
+          TECHNICAL LESSONS &amp; TAKEAWAYS
         </h3>
         <p className="text-base font-pixel-line  font-semibold font-normal leading-relaxed text-cabernet/90 dark:text-cream-100 bg-almond-50 dark:bg-cream-100/5 p-6 rounded-2xl border border-cabernet/15 dark:border-cream-100/15">
           "{project.learnings}"
