@@ -1,3 +1,4 @@
+//Personal Info
 export const personalInfo = {
   name: "SANJANA KRISHNAN",
   title: "Software Developer & Engineer",
@@ -42,7 +43,7 @@ export const problemSolving = {
     "Recursion"
   ]
 };
-
+//Projects
 export const projects = [
   {
     id: "savoury-sweet-co",
@@ -303,7 +304,7 @@ export const projects = [
     learnings: "Enhanced data wrangling with Pandas, statistical plotting with Matplotlib, and desktop GUI embedding."
   }
 ];
-
+// Skills
 export const skillsCategories = [
   {
     title: "SOFTWARE DEVELOPMENT",
@@ -355,6 +356,7 @@ export const skillsCategories = [
     ]
   }
 ];
+//Experience
 export const experience = [
   {
     role: "Software Engineering & AI Intern",
@@ -381,7 +383,7 @@ export const experience = [
     ]
   }
 ];
-
+//Certificates
 export const certifications = [
   {
     name: "AWS Certified Cloud Practitioner (CLF-C02)",
@@ -418,6 +420,18 @@ export const certifications = [
     issuer: "IIT Kharagpur (NPTEL)",
     category: "Business Analytics",
     verificationUrl: "https://drive.google.com/file/d/1ZAEW3TgR_kvH2tJOHbDm5_t4WZ3sLzbf/view?usp=sharing"
+  },
+  {
+  name: "AWS AI Practitioner",
+  issuer: "NASSCOM FutureSkills Prime",
+  category: "Artificial Intelligence",
+  verificationUrl: "https://drive.google.com/file/d/15-mNCPlGctUd1bZUMmQ0Umt1iLUNir1H/view?usp=sharing"
+  },
+  {
+    name: "AWS Machine Learning",
+    issuer: "NASSCOM FutureSkills Prime",
+    category: "Machine Learning",
+    verificationUrl: "https://drive.google.com/file/d/1pzgB4zudnI2orjDnsthahVMuM9sXF3O5/view?usp=sharing"
   },
   {
     name: "The Bits and Bytes of Computer Networking",

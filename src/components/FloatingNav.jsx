@@ -8,6 +8,7 @@ import {
   Cpu, 
   Briefcase, 
   Award, 
+  FileText,
   Mail, 
   Sun, 
   Moon 
@@ -21,6 +22,7 @@ const navItems = [
   { path: '/projects', label: 'PROJECT', icon: FolderKanban },
   { path: '/experience', label: 'EXPERIENCE', icon: Briefcase },
   { path: '/certifications', label: 'CERT', fullLabel: 'CERTIFICATIONS', icon: Award },
+  { path: '/resume', label: 'RESUME', icon: FileText },
   { path: '/contact', label: 'CONTACT', icon: Mail },
 ];
 

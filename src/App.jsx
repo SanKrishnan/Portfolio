@@ -15,6 +15,7 @@ import { Skills } from './pages/Skills';
 import { Experience } from './pages/Experience';
 import { Certifications } from './pages/Certifications';
 import { Contact } from './pages/Contact';
+import { Resume } from './pages/Resume';
 
 import { useEffect } from 'react';
 
@@ -49,6 +50,7 @@ export const App = () => {
               <Route path="/experience" element={<PageTransition><Experience /></PageTransition>} />
               <Route path="/certifications" element={<PageTransition><Certifications /></PageTransition>} />
               <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+              <Route path="/resume" element={<PageTransition><Resume /></PageTransition>} />
               <Route path="*" element={<PageTransition><Home /></PageTransition>} />
             </Routes>
           </main>

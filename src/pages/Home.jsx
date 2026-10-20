@@ -5,7 +5,6 @@ import { personalInfo, projects } from '../data/portfolioData';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
-  // First project is Savoury & Sweet Co.
   const featuredProject = projects[0];
 
   return (
@@ -80,7 +79,65 @@ export const Home = () => {
           </p>
         </motion.div>
       </section>
+      
+      {/* DATA ANALYST RESUME*/}
+      <section className="border-t border-cabernet/15 dark:border-cream-100/15 pt-6 sm:pt-8">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 group"
+        >
+          {/* Resume Information */}
+          <div className="space-y-2">
+            <span className="text-[10px] font-pixel-line uppercase tracking-widest text-flame font-bold">
+              [ CAREER PROFILE ]
+            </span>
 
+            <h2 className="text-xl sm:text-2xl font-pixel-square font-bold text-cabernet dark:text-cream-100 uppercase tracking-tight">
+              DATA ANALYST RESUME
+            </h2>
+
+            <p className="text-xs sm:text-sm font-pixel-line font-semibold dark:font-normal text-cabernet/75 dark:text-cream-100/75">
+              Python · SQL · Data Visualization · Business Insights
+            </p>
+          </div>
+
+          {/* View Resume Link */}
+          <a
+            href="https://drive.google.com/file/d/12AHhp-hB-AHOpiDK8mJHrx_09obcHN_L/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Data Analyst Resume in Google Drive"
+            className="inline-flex items-center gap-2 self-start sm:self-center text-xs font-pixel-line uppercase tracking-widest font-bold text-cabernet dark:text-cream-100 hover:text-flame transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-flame rounded-sm"
+            data-cursor="hover"
+            data-cursor-label="VIEW RESUME"
+          >
+            <span className="border-b border-cabernet/30 dark:border-cream-100/30 group-hover:border-flame pb-1 transition-colors duration-300">
+              VIEW RESUME
+            </span>
+
+            <ArrowUpRight className="w-4 h-4 text-flame transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+          </a>
+        </motion.div>
+        {/* All Resumes */}
+        <div>
+            <Link
+              to="/resume"
+              aria-label="View all resumes"
+              className="group/link inline-flex items-center gap-2 text-xs font-pixel-line uppercase tracking-widest font-bold text-cabernet/70 dark:text-cream-100/70 hover:text-flame transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-flame rounded-sm"
+              data-cursor="hover"
+              data-cursor-label="ALL RESUMES"
+            >
+              <span className="border-b border-cabernet/20 dark:border-cream-100/20 group-hover/link:border-flame pb-1 transition-colors duration-300">
+                ALL RESUMES
+              </span>
+              <ArrowUpRight className="w-4 h-4 text-flame transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1" />
+            </Link>
+          </div>
+      </section>
+      
       {/* FEATURED WORK SECTION: Savoury & Sweet Co. First */}
       <section className="border-t border-cabernet/15 dark:border-cream-100/15 pt-16 space-y-10">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
