@@ -77,13 +77,7 @@ export const projects = [
       "4. Linear Programming Solves Budget-Constrained Optimization"
     ],
     screenshots: [],
-    videos: [
-      {
-        title: "CampaignOptima Demo",
-        description: "Walkthrough of behavioral feature engineering, XGBoost conversion prediction, and linear programming budget optimization.",
-        src: "/videos/campaignoptima-demo.mp4"
-      }
-    ],
+    video: "/videos/campaignoptima-demo.mp4",
     architecture: {
       subtitle: "Machine Learning & Decision Science Platform",
       demoDescription: "A walkthrough of CampaignOptima - featuring behavioral feature engineering, XGBoost conversion prediction, linear programming budget optimization, and interactive SHAP interpretability.",
