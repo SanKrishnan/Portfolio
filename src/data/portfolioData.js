@@ -46,6 +46,55 @@ export const problemSolving = {
 //Projects
 export const projects = [
   {
+    id: "campaign-optima",
+    slug: "campaign-optima",
+    name: "CAMPAIGNOPTIMA",
+    tagline: "Enterprise-Grade Machine Learning & Decision Science Platform",
+    category: "Data Science & Operations Research",
+    accentColor: "#A8D8B9", // Mint / Data Theme
+    shortDescription: "Enterprise-grade machine learning and decision science platform optimizing customer conversion and marketing budgets using XGBoost and linear programming.",
+    problem: "Traditional marketing campaigns lack data-driven budget allocation and real-time conversion propensity scoring, leading to wasted spend and suboptimal ROI.",
+    approach: "Built an end-to-end decision science platform utilizing behavioral feature engineering and XGBoost to predict customer conversion propensities. Integrated operations research techniques, including threshold calibration and linear programming, to solve budget-constrained knapsack optimization problems.",
+    metrics: [
+      "Significant net profit uplifts via optimized budget allocation",
+      "Real-time conversion propensity scoring using XGBoost",
+      "Data-driven budget-constrained knapsack optimization",
+      "Interactive analytics and model interpretability"
+    ],
+    features: [
+      "Behavioral Feature Engineering & Campaign Intensity Metrics",
+      "XGBoost Conversion Propensity Prediction",
+      "Operations Research Threshold Calibration & Linear Programming",
+      "Budget-Constrained Knapsack Optimization Engine",
+      "Interactive Streamlit Real-Time Scoring Dashboard",
+      "SHAP-Based Local Model Interpretability & Marketing Simulation Tools"
+    ],
+    techStack: ["Python", "XGBoost", "Streamlit", "SHAP", "Linear Programming", "Operations Research", "Machine Learning", "Data Science"],
+    workflow: [
+      "1. Customer Behavioral Feature Engineering",
+      "2. XGBoost Model Training for Conversion Propensity",
+      "3. Operations Research Threshold Calibration",
+      "4. Linear Programming Solves Budget-Constrained Optimization"
+    ],
+    screenshots: [],
+    videos:"/videos/campaignoptima-demo.mp4",
+    architecture: {
+      subtitle: "Machine Learning & Decision Science Platform",
+      demoDescription: "A walkthrough of CampaignOptima - featuring behavioral feature engineering, XGBoost conversion prediction, linear programming budget optimization, and interactive SHAP interpretability.",
+      description: "CampaignOptima combines predictive machine learning models with operations research optimization algorithms to maximize marketing conversion efficiency under budget constraints.",
+      pipeline: [
+        { title: "01 — FEATURE ENGINEERING", description: "Processes behavioral data, campaign intensity, and financial stability metrics" },
+        { title: "02 — PREDICTIVE MODELING", description: "XGBoost predicts customer conversion propensities in real time" },
+        { title: "03 — OPERATIONS RESEARCH", description: "Linear programming and threshold calibration solve budget-constrained knapsack problems" },
+        { title: "04 — INTERPRETABILITY & UI", description: "SHAP provides local model explanations and Streamlit powers the interactive simulation dashboard" }
+      ]
+    },
+    github: "https://github.com/SanKrishnan/CampaignOptima",
+    website: "https://campaignoptima.streamlit.app/",
+    liveDemo: "https://campaignoptima.streamlit.app/",
+    learnings: "Mastered the integration of machine learning classification models with operations research optimization techniques to solve real-world resource allocation problems."
+  },
+  {
     id: "savoury-sweet-co",
     slug: "savoury-sweet-co",
     name: "SAVOURY & SWEET CO.",
