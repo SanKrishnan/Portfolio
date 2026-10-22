@@ -46,10 +46,10 @@ export const problemSolving = {
 //Projects
 export const projects = [
   {
-    id: "campaign-optima",
-    slug: "campaign-optima",
-    name: "CAMPAIGNOPTIMA",
-    tagline: "Enterprise-Grade Machine Learning & Decision Science Platform",
+    id: "GrahakNiti",
+    slug: "GrahakNiti",
+    name: "GRAHAKNITI",
+    tagline: "Data-Driven Customer Targeting & Strategic Campaign Allocation",
     category: "Data Science & Operations Research",
     accentColor: "#A8D8B9", // Mint / Data Theme
     shortDescription: "Enterprise-grade machine learning and decision science platform optimizing customer conversion and marketing budgets using XGBoost and linear programming.",
@@ -77,11 +77,11 @@ export const projects = [
       "4. Linear Programming Solves Budget-Constrained Optimization"
     ],
     screenshots: [],
-    video: "/videos/campaignoptima-demo.mp4",
+    video: "/videos/GrahakNiti-demo.mp4",
     architecture: {
       subtitle: "Machine Learning & Decision Science Platform",
-      demoDescription: "A walkthrough of CampaignOptima - featuring behavioral feature engineering, XGBoost conversion prediction, linear programming budget optimization, and interactive SHAP interpretability.",
-      description: "CampaignOptima combines predictive machine learning models with operations research optimization algorithms to maximize marketing conversion efficiency under budget constraints.",
+      demoDescription: "A walkthrough of GrahakNiti - featuring behavioral feature engineering, XGBoost conversion prediction, linear programming budget optimization, and interactive SHAP interpretability.",
+      description: "GrahakNiti combines predictive machine learning models with operations research optimization algorithms to maximize marketing conversion efficiency under budget constraints.",
       pipeline: [
         { title: "01 — FEATURE ENGINEERING", description: "Processes behavioral data, campaign intensity, and financial stability metrics" },
         { title: "02 — PREDICTIVE MODELING", description: "XGBoost predicts customer conversion propensities in real time" },
@@ -89,9 +89,9 @@ export const projects = [
         { title: "04 — INTERPRETABILITY & UI", description: "SHAP provides local model explanations and Streamlit powers the interactive simulation dashboard" }
       ]
     },
-    github: "https://github.com/SanKrishnan/CampaignOptima",
-    website: "https://campaignoptima.streamlit.app/",
-    liveDemo: "https://campaignoptima.streamlit.app/",
+    github: "https://github.com/SanKrishnan/GrahakNiti",
+    website: "https://grahakniti.streamlit.app/",
+    liveDemo: "https://grahakniti.streamlit.app/",
     learnings: "Mastered the integration of machine learning classification models with operations research optimization techniques to solve real-world resource allocation problems."
   },
   {
