@@ -77,7 +77,7 @@ export const projects = [
       "4. Linear Programming Solves Budget-Constrained Optimization"
     ],
     screenshots: [],
-    video: "/videos/GrahakNiti-demo.mp4",
+    video: "/videos/grahakniti.webm",
     architecture: {
       subtitle: "Machine Learning & Decision Science Platform",
       demoDescription: "A walkthrough of GrahakNiti - featuring behavioral feature engineering, XGBoost conversion prediction, linear programming budget optimization, and interactive SHAP interpretability.",
